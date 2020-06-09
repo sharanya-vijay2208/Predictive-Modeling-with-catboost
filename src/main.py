@@ -13,10 +13,6 @@ if __name__  == "__main__":
     train_df = pd.read_csv(os.path.join(os.getcwd()  ,'data/train.csv'))
     test_df = pd.read_csv(os.path.join(os.getcwd()  ,'data/test.csv'))
     
-    #Shape of training and test dataset
-    train_df.shape , test_df.shape
-    #((891, 12), (418, 11))
-    
     #Catboost handles Null values and Categorical variables
     clf = catb.CatbClassifier(train_df)    
     
