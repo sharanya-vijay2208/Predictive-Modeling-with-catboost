@@ -11,9 +11,10 @@ Yandex claims that it provides great results without parameter tuning and that h
 Bayesian optimization using hyperopt package).
 
 
-##Prerequisites
+## Prerequisites
 
 Load train and test datasets to data folder
 
-##Usage
+## Usage
+
 python main.py 
