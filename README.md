@@ -6,7 +6,7 @@ using Catboost to predict which passengers survived the Titanic shipwreck and it
 CatBoost ,an open source gradient boosting machine learning library from Yandex used to solve both classification and regression tasks 
 allows you to deal with categorical data and build models without having to encode it.
 Usual gradient boosting algorithms have no support/no optimal support for categorical data which arises in many datasets.
-This was my motivation to try it on the tabular heterogeneous Titanic data for classification.
+This was my motivation to try it on the tabular heterogeneous Titanic data for binary classification.
 Yandex claims that it provides great results without parameter tuning and that has been the case here(I tried
 Bayesian optimization using hyperopt package).
 
