@@ -2,7 +2,7 @@
 
 # Import necessary libraries
 import pandas as pd
-import os,time
+import time
 import catboost_model as catb
 
 # Main
@@ -10,8 +10,8 @@ if __name__  == "__main__":
     start = time.time()
     
     # Load train and test datasets
-    train_df = pd.read_csv(os.path.join(os.getcwd()  ,'data/train.csv'))
-    test_df = pd.read_csv(os.path.join(os.getcwd()  ,'data/test.csv'))
+    train_df = pd.read_csv('data/train.csv')
+    test_df = pd.read_csv('data/test.csv')
     
     #Catboost handles Null values and Categorical variables
     clf = catb.CatbClassifier(train_df)    
